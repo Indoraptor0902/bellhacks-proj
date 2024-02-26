@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="static/style.css">
+        <title>Test</title>
+    </head>
+    <body>
+        <div class="header-box">
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+ 
+                    <li>
+                        <a href="#">Features</a>
+                        <ul>
+                            <li><a href= Option1.html>Calculator</a></li>
+                            <li><a href= Option2.html >Quiz</a></li>
+                 
+                        </ul>
+                    </li>
+                </ul>
+ 
+ 
+            </nav>
+ 
+        </div>
+        <div class="header">
+            <h1>Heart Attack Risk Analysis</h1>
+            <p>Find out if you're at risk</p>
+        </div>
+        <form action="{{ url_for("home")}}" method="post">
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" placeholder="age">
+
+        <label for="sex">Sex</label>
+        <input type="text" id="sex" name="sex" placeholder="sex">
+
+        <label for="cholesterol">Cholesterol</label>
+        <input type="text" id="cholesterol" name="cholesterol" placeholder="cholesterol">
+
+        <label for="heartrate">Heartrate</label>
+        <input type="text" id="heartrate" name="heartrate" placeholder="heartrate">
+
+        <label for="diabetes">Diabetes</label>
+        <input type="text" id="diabetes" name="diabetes" placeholder="diabetes">
+
+
+
+        <button type="submit">Submit Info</button>
+    </body>
+</html>
