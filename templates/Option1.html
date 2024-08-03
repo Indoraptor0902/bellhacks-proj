@@ -28,7 +28,7 @@
             <h1>Heart Attack Risk Analysis</h1>
             <p>Find out if you're at risk</p>
         </div>
-        <form action="{{ url_for("home")}}" method="post">
+        <!--<form action="{{ url_for("home")}}" method="post">
         <label for="age">Age</label>
         <input type="text" id="age" name="age" placeholder="age">
 
@@ -46,6 +46,36 @@
 
 
 
-        <button type="submit">Submit Info</button>
+        <button type="submit">Submit Info</button>-->
+
+        <form action="Option1.html" method="POST">
+            <label for="Pregnancies">Number of Pregnancies</label>
+            <input type="text" name="pregnancies">
+
+            <label for="Glucose">Glucose Level</label>
+            <input type="text" name="glucose">
+
+            <label for="BloodPressure">Diastolic Blood Pressure</label>
+            <input type="text" name="bloodpressure">
+
+            <label for="SkinThickness">Skin Thickness</label>
+            <input type="text" name="skinthickness">
+
+            <label for="Insulin">Insulin Level</label>
+            <input type="text" name="insulin">
+
+            <label for="BMI">BMI</label>
+            <input type="text" name="bmi">
+
+            <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label>
+            <input type="text" name="diabetespedigreefunction">
+
+            <label for="Age">Age</label>
+            <input type="text" name="age">
+
+            <button type="submit">Submit</button>
+        </form>
+        <p>{{statement}}</p>
+
     </body>
 </html>
